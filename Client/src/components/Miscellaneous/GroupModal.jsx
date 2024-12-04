@@ -103,6 +103,8 @@ const GroupModal = ({ children }) => {
         isClosable: true,
         position: "bottom",
       });
+
+      window.location.reload();
     } catch (error) {
       toast({
         title: "Failed to Create the chat.",

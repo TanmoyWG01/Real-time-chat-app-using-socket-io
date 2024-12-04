@@ -26,7 +26,7 @@ import { BellIcon, ChevronDownIcon } from "@chakra-ui/icons";
 import { useState } from "react";
 import { ChatState } from "../../Context/ChatProvider";
 import { ProfileModal } from "./ProfileModal";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import ChatLoading from "./ChatLoading";
 import UserListItem from "./UseAvater/UserListItem";
@@ -47,11 +47,11 @@ const SideDrawer = () => {
   const toast = useToast();
 
   const { user, setSelectedChat, chats, setChats } = ChatState();
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const handleLogout = () => {
     localStorage.removeItem("userInfo");
-    navigate("/");
+    window.location.href = "/";
   };
 
   const handleSearch = async () => {

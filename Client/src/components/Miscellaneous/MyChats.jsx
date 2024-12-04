@@ -8,7 +8,6 @@ import { getSender } from "../config/chat-logics";
 import GroupModel from "./GroupModal";
 import { AddIcon } from "@chakra-ui/icons";
 
-// eslint-disable-next-line react/prop-types
 const MyChats = ({ fetchAgain }) => {
   const [loggedUser, setLoggedUser] = useState();
   const { user, selectedChat, setSelectedChat, chats, setChats } = ChatState();
